@@ -26,3 +26,8 @@
     scale: 1.03;
     transition: scale 0.1s ease-out;
 }
+
+/* prevent firing events from children */
+.card > * {
+    pointer-events: none;
+}
