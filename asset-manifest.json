@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.b0648171.css",
+    "main.js": "/memory-game/static/js/main.c51f9212.js",
+    "static/media/marcos-sr.jpg": "/memory-game/static/media/marcos-sr.76609072a8bc0b19d370.jpg",
+    "static/media/duterte.jpg": "/memory-game/static/media/duterte.1634fb1925e019a355b0.jpg",
+    "static/media/quezon.jpg": "/memory-game/static/media/quezon.3452deecf39c011dd0ce.jpg",
+    "static/media/aguinaldo.jpg": "/memory-game/static/media/aguinaldo.aadad7cabc7a912654c7.jpg",
+    "static/media/marcos-jr.webp": "/memory-game/static/media/marcos-jr.beff621088f8482f808e.webp",
+    "static/media/arroyo.webp": "/memory-game/static/media/arroyo.0495b404d233dad13df4.webp",
+    "static/media/aquino-noy.webp": "/memory-game/static/media/aquino-noy.59909a3dacce8aa5e1f5.webp",
+    "static/media/ramos.jpg": "/memory-game/static/media/ramos.26c898e1368017665591.jpg",
+    "static/media/aquino-cor.webp": "/memory-game/static/media/aquino-cor.35920974012afe4c0937.webp",
+    "static/media/magsaysay.jpg": "/memory-game/static/media/magsaysay.3084a3913571a71816ea.jpg",
+    "static/media/osmeña.jpg": "/memory-game/static/media/osmeña.0a51d740fe0d2d648c52.jpg",
+    "static/media/roxas.jpg": "/memory-game/static/media/roxas.f70dd627eabbf1125727.jpg",
+    "static/media/garcia.jpg": "/memory-game/static/media/garcia.c03d74dab1135a178545.jpg",
+    "static/media/estrada.jpg": "/memory-game/static/media/estrada.64edc344eb4b21837816.jpg",
+    "static/media/macapagal.jpg": "/memory-game/static/media/macapagal.d3c25590e12efd885aac.jpg",
+    "index.html": "/memory-game/index.html",
+    "main.b0648171.css.map": "/memory-game/static/css/main.b0648171.css.map",
+    "main.c51f9212.js.map": "/memory-game/static/js/main.c51f9212.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0648171.css",
+    "static/js/main.c51f9212.js"
+  ]
+}
