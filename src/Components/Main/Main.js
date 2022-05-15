@@ -10,8 +10,21 @@ const Main = () => {
     const [bestScore, setBestScore] = useState(0);
     const [cards, setCards] = useState(CardsData);
 
-    const incrementScore = (e) => {
+    const incrementScore = () => {
         setCurrentScore(currentScore + 1);
+    }
+    
+    const resetScore = () => {
+        setCurrentScore(0);
+    }
+    
+    const resetCards = () => {
+        let newCards = cards;
+        for (let i = 0; i < newCards.length; i++) {
+            let card = newCards[i];
+            card.touched = false;
+        }
+        return newCards;
     }
 
     const storeBestScore = () => {
@@ -33,17 +46,28 @@ const Main = () => {
         }
     }
 
+    const shuffleArray = (array) => {
+        var copy = [], n = array.length, i;
+        
+        // While there remain elements to shuffle…
+        while (n) {
+        
+            // Pick a remaining element…
+            i = Math.floor(Math.random() * array.length);
+        
+            // If not already shuffled, move it to the new array.
+            if (i in array) {
+            copy.push(array[i]);
+            delete array[i];
+            n--;
+            }
+        }
+        return copy;
+    }
+
     const toggleTouchedCard = (position) => {
         let newCards = cards; 
         newCards[position].touched = true;
-        return newCards;
-    }
-
-    const touchCard = (position) => {
-        let newCards = cards;
-        newCards[position].touched = true;
-        console.log(newCards);
-        console.log(cards);
         return newCards;
     }
 
@@ -53,7 +77,13 @@ const Main = () => {
         const positionOfCardTouched = getPositionOfCardTouched(selectedID);
         if (positionOfCardTouched != -1) {
             setCards(toggleTouchedCard(positionOfCardTouched));
+            setCards(shuffleArray(cards));
             incrementScore();
+        } else {
+            storeBestScore();
+            resetScore();
+            setCards(resetCards());
+            setCards(shuffleArray(cards));
         }
     }
 
