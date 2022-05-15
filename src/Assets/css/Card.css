@@ -1,0 +1,28 @@
+.card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+
+    box-shadow: 0px 10px 100px rgba(0,0,0,0.3);
+}
+
+.card > img {
+    border-radius: 0.4rem;
+    height: 10rem;
+    width: 10rem;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.card:hover {
+    /* background-color: rgba(0,0,0,.1); */
+    scale: 1.03;
+    transition: scale 0.1s ease-out;
+}
