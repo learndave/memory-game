@@ -16,6 +16,7 @@ import osmeñaPhoto from "../Assets/Photos/osmeña.jpg";
 import quirinoPhoto from "../Assets/Photos/quirino.jpg";
 import ramosPhoto from "../Assets/Photos/ramos.jpg";
 import roxasPhoto from "../Assets/Photos/roxas.jpg";
+import laurelPhoto from "../Assets/Photos/laurel.webp";
 
 const CardsData = 
     [{
@@ -128,6 +129,13 @@ const CardsData =
         title: "Roxas",
         className: "roxas",
         imgSrc: {roxasPhoto},
+        touched: false,
+    },
+    {
+        id: uniqid(),
+        title: "Laurel",
+        className: "laurel",
+        imgSrc: {laurelPhoto},
         touched: false,
     }];
 

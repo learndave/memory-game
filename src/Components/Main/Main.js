@@ -90,8 +90,11 @@ const Main = () => {
     return (
        <div className="main-container">
            <div className="main-title">MEMORY GAME</div>
-           <div className="current-score score">Score: {currentScore}</div>
-           <div className="best-score score">Best Score: {bestScore}</div>
+           <div className="instructions">Choose a president, and never choose it again.</div>
+           <div className="scores">
+                <div className="current-score score">Score: {currentScore}</div>
+                <div className="best-score score">Best Score: {bestScore}</div>
+           </div>
            <div className="cards-container">
             {cards.map((card) => {
                 return <Card card={card} onClick={checkAnswer}/>
