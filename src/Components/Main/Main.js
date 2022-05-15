@@ -90,7 +90,7 @@ const Main = () => {
     return (
        <div className="main-container">
            <div className="main-title">MEMORY GAME</div>
-           <div className="instructions">Choose a president, and never choose it again.</div>
+           <div className="instructions">Choose a president without repetition.</div>
            <div className="scores">
                 <div className="current-score score">Score: {currentScore}</div>
                 <div className="best-score score">Best Score: {bestScore}</div>
